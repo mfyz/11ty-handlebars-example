@@ -12,8 +12,7 @@ module.exports = (eleventyConfig) => {
 	return {
 		dir: {
 			input: './',
-			includes: 'includes',
-			output: 'public'
+			includes: 'includes'
 		},
 		passthroughFileCopy: true
 	}
