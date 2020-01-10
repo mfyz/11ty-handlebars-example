@@ -1,0 +1,17 @@
+{
+  "name": "11ty-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"build": "eleventy",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "handlebars": "^4.6.0"
+  }
+}

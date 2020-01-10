@@ -1,0 +1,16 @@
+{{#if pagination.previousPageHref}}
+	<a href="{{ pagination.previousPageHref }}">&larr;</a>
+	&nbsp; &middot; &nbsp;
+{{/if}}
+{{#each pagination.hrefs}}
+	{{#if @index}}
+		&nbsp; &middot; &nbsp;
+	{{/if}}
+	<a href="{{ this }}" style="{{#if (eq ../pagination.pageNumber @index)}}font-weight: bold;{{/if}}">
+		Page {{ addOne @index }}
+	</a>
+{{/each}}
+{{#if pagination.nextPageHref}}
+	&nbsp; &middot; &nbsp;
+	<a href="{{ pagination.nextPageHref }}">&rarr;</a>
+{{/if}}
